@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: myapp-argocd-application
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/sid14581/k8s-argoCD-piepline_support.git
+    targetRevision: HEAD
+    path: deploy
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: myapp_argocd
+
+  
+  syncPolicy:
+    syncOptions:
+      - CreateNamespace=true
+    
+    automated:
+      selfHeal: true
+      prune: true
