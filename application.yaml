@@ -11,7 +11,7 @@ spec:
     path: deploy
   destination:
     server: https://kubernetes.default.svc
-    namespace: myapp_argocd
+    namespace: todo-list-app-argocd
   
   syncPolicy:
     syncOptions:
