@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/sid14581/k8s-argoCD-piepline_support.git
+    repoURL: https://github.com/sid14581/Suppport_pipeline_argoCD_k8s.git
     targetRevision: HEAD
     path: deploy
   destination:
