@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: todo
-        image: sid716/jenkins_argocd_pipelines_sample:59
+        image: sid716/jenkins_argocd_pipelines_sample:60
         ports:
         - containerPort: 8000
